@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens for TechTalks.
+ * Cool paper + graphite ink, with a single deep moss accent used for
+ * membership / activity states. Metadata is set in mono because the
+ * subject of this product is code and routes.
+ */
+@theme {
+  --color-paper: #f4f5f7;
+  --color-card: #ffffff;
+  --color-ink: #141822;
+  --color-muted: #5c6575;
+  --color-line: #e2e5ea;
+  --color-moss: #1d6b4e;
+  --color-moss-deep: #14503b;
+  --color-mint: #e6f2ea;
+
+  --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", "SF Mono", Menlo,
+    Consolas, monospace;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-moss);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

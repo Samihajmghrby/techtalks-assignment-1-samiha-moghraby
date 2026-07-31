@@ -14,17 +14,17 @@ npm run typecheck
 
 ## Routes
 
-| URL | File |
-| --- | --- |
-| `/` | `app/page.tsx` |
-| `/about` | `app/(main)/about/page.tsx` |
-| `/communities` | `app/(main)/communities/page.tsx` |
-| `/communities/[slug]` | `app/(main)/communities/[slug]/page.tsx` |
-| `/topics` | `app/(main)/topics/page.tsx` |
-| `/developers` | `app/(main)/developers/page.tsx` |
-| `/developers/top-rated` | `app/(main)/developers/top-rated/page.tsx` |
-| `/developers/new-members` | `app/(main)/developers/new-members/page.tsx` |
-| `/developers/[username]` | `app/(main)/developers/[username]/page.tsx` |
+| URL                                     | File                                                       |
+| --------------------------------------- | ---------------------------------------------------------- |
+| `/`                                     | `app/page.tsx`                                             |
+| `/about`                                | `app/(main)/about/page.tsx`                                |
+| `/communities`                          | `app/(main)/communities/page.tsx`                          |
+| `/communities/[slug]`                   | `app/(main)/communities/[slug]/page.tsx`                   |
+| `/topics`                               | `app/(main)/topics/page.tsx`                               |
+| `/developers`                           | `app/(main)/developers/page.tsx`                           |
+| `/developers/top-rated`                 | `app/(main)/developers/top-rated/page.tsx`                 |
+| `/developers/new-members`               | `app/(main)/developers/new-members/page.tsx`               |
+| `/developers/[username]`                | `app/(main)/developers/[username]/page.tsx`                |
 | `/developers/[username]/posts/[postId]` | `app/(main)/developers/[username]/posts/[postId]/page.tsx` |
 
 Real URLs to try:
@@ -103,3 +103,16 @@ No entity data is declared inside a page component.
 - [x] Loading UI, active link styling, reusable card components
 - [x] Responsive layout, keyboard focus states, reduced-motion support
 - [x] No database, no authentication, no external APIs, no Pages Router
+
+## Assignment 1 Verification
+
+This project was built for TechTalks Full-Stack Bootcamp Assignment 1.
+
+### Verification
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run typecheck
+```
